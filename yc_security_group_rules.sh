@@ -20,7 +20,7 @@ detect_ip() {
 		echo "IP detection service is not available"
 		exit 1
 	else
-		echo "Detected your public IP: $DETECTED_IP"
+		echo "Detected your IP: $DETECTED_IP"
 	fi
 }
 
@@ -115,13 +115,13 @@ case "$COMMAND" in
 		echo "  get [DESCRIPTION]           Get all rules or filtered by DESCRIPTION"
 		echo
 		echo "  new DESCRIPTION [CIDR]      Create new rule with DESCRIPTION and CIDR"
-		echo "                              or your public IP (if CIDR was not specified)"
+		echo "                              or your IP (if CIDR was not specified)"
 		echo
 		echo "  del DESCRIPTION             Delete one rule founded by DESCRIPTION"
 		echo
 		echo "  upd DESCRIPTION [CIDR]      Delete old rule by description and create"
 		echo "                              new rule with the same description and CIDR"
-		echo "                              or your public IP (if CIDR was not specified)"
+		echo "                              or your IP (if CIDR was not specified)"
 		echo
 		echo "ARGUMENTS:"
 		echo
